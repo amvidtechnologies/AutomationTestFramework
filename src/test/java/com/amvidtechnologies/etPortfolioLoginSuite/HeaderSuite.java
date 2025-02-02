@@ -2,7 +2,7 @@ package com.amvidtechnologies.etPortfolioLoginSuite;
 
 import basicFramework.web.testNG.BaseSuite;
 import org.testng.annotations.*;
-import webAutomation.baseSuite.AppHeader;
+import webAutomation.basePages.AppHeader;
 import webAutomation.loginPage.LoginPage;
 
 public class HeaderSuite extends BaseSuite {

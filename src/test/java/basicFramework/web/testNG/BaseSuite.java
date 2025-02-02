@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
-import webAutomation.baseSuite.BasePage;
+import webAutomation.basePages.BasePage;
 import webAutomation.driver.CustomWebDriver;
 import webAutomation.driver.DriverHandler;
 import webAutomation.logger.LoggerManager;

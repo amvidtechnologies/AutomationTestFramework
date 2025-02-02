@@ -3,7 +3,7 @@ package webAutomation.loginPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import webAutomation.baseSuite.BasePage;
+import webAutomation.basePages.BasePage;
 import webAutomation.driver.CustomWebDriver;
 
 

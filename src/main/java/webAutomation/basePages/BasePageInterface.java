@@ -1,4 +1,4 @@
-package webAutomation.baseSuite;
+package webAutomation.basePages;
 
 public interface BasePageInterface {
     final static long pageFullyLoadTimeOutInSeconds = 15;

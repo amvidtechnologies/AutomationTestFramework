@@ -1,4 +1,4 @@
-package webAutomation.baseSuite;
+package webAutomation.basePages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
