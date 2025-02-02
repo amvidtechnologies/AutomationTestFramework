@@ -1,0 +1,12 @@
+{
+  "employee-Amarnath": {
+    "name":"Amarnath",
+    "salary":56000,
+    "married":true
+  },
+  "employee-Vidya": {
+    "name":"Vidya",
+    "salary":15000,
+    "married":false
+  }
+}

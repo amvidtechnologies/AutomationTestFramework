@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="classes" thread-count="5">
+<!--    default thread count is 5-->
+    <listeners>
+        <listener class-name="webAutomation.listener.AnnotationTransformer"/>
+    </listeners>
+<test name="Test Type 1">
+    <parameter name="browser" value="chrome" />
+<!--    <parameter name="emailid" value="tester456@gmail.com"/>-->
+<!--    <parameter name="password" value="test@123"/>-->
+    <classes>
+        <class name="com.amvidtechnologies.etPortfolioLoginSuite.TestSuite1"/>
+        <class name="com.amvidtechnologies.etPortfolioLoginSuite.HeaderSuite"/>
+    </classes>
+</test> <!-- Test -->
+
+<test name="Test Type 2">
+    <parameter name="browser" value="firefox" />
+    <classes>
+        <class name="com.amvidtechnologies.etPortfolioLoginSuite.TestSuite3"/>
+        <class name="com.amvidtechnologies.etPortfolioLoginSuite.TestSuite4"/>
+        <class name="com.amvidtechnologies.etPortfolioLoginSuite.TestSuite5"/>
+    </classes>
+
+</test> <!-- Test -->
+</suite> <!-- Suite -->
