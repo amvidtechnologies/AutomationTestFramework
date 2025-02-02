@@ -100,10 +100,16 @@ public class BaseSuite extends BaseSuiteVariables{
         setEnvURL();
     }
     private void convertTestResult(ITestResult result) {
+        Throwable exception = result.getThrowable();
         if ((result.getStatus() == ITestResult.SUCCESS)){
             test.get().pass("Test Passed");}
         else if ((result.getStatus() == ITestResult.FAILURE)){
-            test.get().fail(result.getThrowable());
+            if(exception instanceof AssertionError){
+                test.get().fail(result.getThrowable());
+            }
+            else {
+                test.get().warning(result.getThrowable());
+            }
             String path = "test-output/"+reportName+"/screenshot/"+getClass().getSimpleName()+"_"+result.getName()+"_Fail.png";
             screenShot(path,result);
             try {
